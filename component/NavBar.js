@@ -9,13 +9,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SwipeableTemporaryDrawer from './Drawer';
 import Link from 'next/link';
 
-export default function NavBar() {
+export default function NavBar(props) {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="fixed">
+            <AppBar style={{backgroundColor:'transparent'}} position="fixed">
                 <Toolbar>
                     <Link passHref={true} href={'/'}>
-                        <IconButton
+                        {/* <IconButton
                             size="large"
                             edge="start"
                             color="inherit"
@@ -23,11 +23,14 @@ export default function NavBar() {
                             sx={{ mr: 2 }}
                         >
                             <MenuIcon />
-                        </IconButton>
-                    </Link>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        News
+                        </IconButton> */}
+                    <Typography className='pointer' variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                        Scripts Hypno
                     </Typography>
+                    </Link>
+                   
+                        
+                   
                     <Button color="inherit">Login</Button>
                     <SwipeableTemporaryDrawer />
                 </Toolbar>

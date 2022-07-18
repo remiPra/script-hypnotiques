@@ -65,11 +65,49 @@ function ArreterDeFumer() {
         first:` Je vous propose un magnifique voyage en ballon. C’est parti. 
         `
        },{
-        first:``
+        first:` Je ne vous ai pas dit, j’ai comme l’impression que plus j’… INSPIRES… et plus l’enveloppe du ballon se… MOBILISES… Et à 
+        chaque inspiration, le ballon s’… ELEVES DAVANTAGE… DAVANTAGE… ENCORE…. DAVANTAGE…`
+       },{
+        first:`Regardez le ciel, et la montgolfière s’envole. 
+        Je vois comme les composants du paysage rétrécissent. Plus vous vous… ELEVEZ… plus ça… CHANGES… ! 
+       `
+       },{
+        first:` Ne… SORTEZ… pas ces… CIGARETTES… de l’endroit où vous les rangiez avant d’être bien… PRET… à les… JETEZ… 
+        `
+       },{
+        first:` Lorsque ce sera fait, regardez-les tomber, tomber, tomber… DAVANTAGE... Alors qu’… ELLES TOMBENT…, ELLES 
+        RETRECISSENT… Alors le paysage… CHANGES ENCORE… !`
+       },{
+        first:` Apprêtez-vous à… VOUS POSER… dans un nouveau lieu tellement… PLUS BEAU…, … POSITIF… et… BON… pour… 
+        VOUS...`
+       },{
+        first:` Je vais me taire un moment, ne… PROFITEZ… pas… TOTALEMENT… de votre… NOUVELLE VIE… avant d’avoir 
+        réentendu ma voix.`
+       },{
+        first:`Je vais compter jusqu’à 5 et vous pouvez compter mentalement avec moi. Lorsque je prononcerai ce chiffre, vous pourrez 
+        faire ce que je vous proposerai de faire si vous en ressentez l’envie, et une partie de vous-même… SAIS TRES BIEN… ce qui 
+        va se… PASSEZ…, peut-être… A…-(près)…, … AUTRE CHOSE… `
+       },{
+        first:` 1. Prenez plusieurs grandes et profondes inspirations. Inspirez… PROFONDEMENT…, relâchez complètement. Comme ça, 
+        très bien.`
+       },{
+        first:`2. Vous pouvez bouger vos doigts et les différentes parties de votre corps. 
+        `
+       },{
+        first:` 3. Savez-vous si vous préférez… JETEZ… ou donner les dernières… CIGARETTES… ? 
+        `
+       },{
+        first:` 4. Apprêtez-vous à… REVENIR ICI ET MAINTENANT… 
+        `
+       },{
+        first:`5. Vous pouvez ouvrir vos yeux; revenez Ici et Maintenant. 
+        Bonjour !`
        }
     ])
     return (<>
-        <h2 style={{ marginTop: '100px', fontSize: "2.5em", textAlign: 'center' }}>
+        <h2 className='computer' style={{ marginTop: '100px', fontSize: "2.5em", textAlign: 'center' }}>
+            Arreter de Fumer  </h2>
+        <h2 className='mobile' style={{ marginTop: '65px', fontSize: "1.2em", textAlign: 'center' }}>
             Arreter de Fumer  </h2>
         <Swiper
             spaceBetween={50}
@@ -89,11 +127,16 @@ function ArreterDeFumer() {
         >
             {data.map((element,index) => (
                 <SwiperSlide key={index}>
-                    <div  style={{ fontSize: "20px", padding: '20px 80px' }}>
-                        <p>{element.first}</p>
-                        <p>{element.second}</p>
-                        <p>{element.third}</p>
-                    </div>
+                <div className='computer' style={{height:'400px',fontSize:"28px", padding: '0px 80px' }}>
+                    <p>{element.first}</p>
+                    <p>{element.second}</p>
+                    <p>{element.third}</p>
+                </div>
+                <div className='mobile' style={{height:'400px',fontSize:"20px", padding: '0px 35px' }}>
+                    <p>{element.first}</p>
+                    <p>{element.second}</p>
+                    <p>{element.third}</p>
+                </div>
                 </SwiperSlide>
             ))}
         </Swiper>

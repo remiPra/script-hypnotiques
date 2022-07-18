@@ -88,11 +88,17 @@ tensions, d'images, de pensées, d'émotions, pourquoi pas.`}
         >
             {data.map((element,index)=>(
             <SwiperSlide key={index} >
-                <div style={{fontSize:"20px", padding: '0px 80px' }}>
+              <div className='computer' style={{height:'400px',fontSize:"28px", padding: '0px 80px' }}>
                     <p>{element.first}</p>
                     <p>{element.second}</p>
                     <p>{element.third}</p>
                 </div>
+                <div className='mobile' style={{height:'400px',fontSize:"20px", padding: '0px 35px' }}>
+                    <p>{element.first}</p>
+                    <p>{element.second}</p>
+                    <p>{element.third}</p>
+                </div>
+                
             </SwiperSlide>
                ))}
         </Swiper>

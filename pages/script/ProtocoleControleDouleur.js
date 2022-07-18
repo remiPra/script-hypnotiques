@@ -90,6 +90,45 @@ function ProtocoleControleDouleur() {
             PETIT POIS... Quand vous réentendrez ma voix, cette boule sera… UN PETIT POIS…, un tout… PETIT POIS… `
         },{
             first:` [ Pause ] `
+        },{
+            first:`… DETENDEZ-VOUS… 
+            Nous allons nous… LIBEREZ… de ce… PETIT POIS…, car un petit pois… CIRCULE MIEUX… 
+            Un petit pois… CIRCULE MIEUX… dans un tuyau.`
+        },{
+            first:`Cette expérience me fait penser au jour où j’ai… PASSEZ L’ASPIRATEUR…, je tiens cet aspirateur, et je veux… 
+            ABSORBEZ… différentes… SALETES... Et je ne… REUSSIS… pas tout de suite à… ABSORBEZ… les grosses… 
+            SALETES…, parce qu’elles se coincent et bouchent le tuyau.`
+        },{
+            first:` Alors, je les découpe, je les décompose, pour qu’elles deviennent de petits morceaux, et les petits morceaux glissent 
+            naturellement et simplement dans le tuyau de l’aspirateur, comme ce… PETIT POIS… qui peut… COMMENCEZ… à… 
+            GLISSEZ…, … NATURELLEMENT… et… SIMPLEMENT…, dans le… BAS… du… CORPS…, en… DIRECTION… du… 
+            SOL…,`
+        },{
+            first:`et… DESCENDRE DAVANTAGE…, et vous pouvez suivre sa trajectoire, en imagination, et vous pouvez le voir… 
+            DESCENDRE DAVANTAGE…, toujours… SPECTATEUR… de ce… CORPS…, là-bas devant, et le laisser… QUITTEZ… ce… 
+            CORPS…, et s’… ENFONCEZ… dans le sol.`
+        },{
+            first:` … INSPIREZ PROFONDEMENT… pour vous en… LIBEREZ COMPLETEMENT... 
+            Voilà, … INSPIREZ PROFONDEMENT…, … SOUFFLEZ COMPLETEMENT... Très bien.`
+        },{
+            first:`A présent, … REGARDEZ… devant vous comme ce… CORPS… est… PARFAITEMENT LIBEREZ…, … EMPLI… à tous les 
+            niveaux de cette… DETENTE…, de ce… BIEN-ETRE…, de cet… APAISEMENT…, de ce… GRAND CONFORT… et de 
+            cette… PROFONDE RELAXATION… qui remplace la tension.`
+        },{
+            first:`Alors peut-être que vous pouvez… COMMENCEZ…, en imagination, à marcher vers ce corps, à… AVANCEZ… vers lui, pour 
+            le… RECUPEREZ…, pour… RENTREZ… en lui, pour… PRENDRE POSSESSION… de ce… CORPS… en… PLEINE 
+            SANTE…, en… PLEINE FORME…, plein de… VITALITE…, et ainsi pouvoir… CONTINUEZ… et reprendre vos activités. `
+        },{
+            first:`SANTE…, en… PLEINE FORME…, plein de… VITALITE…, et ainsi pouvoir… CONTINUEZ… et reprendre vos activités. 
+            Allez-y. 
+            [ Pause ]`
+        },{
+            first:`… REPRENEZ… bien… POSSESSION… de… VOTRE CORPS… 
+            Prenez quelques… GRANDES… et… PROFONDES INSPIRATIONS…, alors que vous êtes en… PLEINE SANTE…, en… 
+           PLEINE FORME…, plein de… VITALITE… `
+        },{
+            first:`Et quand vous serez prêt, vous pourrez ouvrir vos yeux, et… REVENIR…, …ICI… et… MAINTENANT… 
+            Bonjour !`
         }
     ])
     return (<>
@@ -112,11 +151,16 @@ function ProtocoleControleDouleur() {
         >
             {data.map((element,index) => (
                 <SwiperSlide key={index}>
-                    <div  style={{ fontSize: "20px", padding: '20px 80px' }}>
-                        <p>{element.first}</p>
-                        <p>{element.second}</p>
-                        <p>{element.third}</p>
-                    </div>
+                  <div className='computer' style={{height:'400px',fontSize:"28px", padding: '0px 80px' }}>
+                    <p>{element.first}</p>
+                    <p>{element.second}</p>
+                    <p>{element.third}</p>
+                </div>
+                <div className='mobile' style={{height:'400px',fontSize:"20px", padding: '0px 35px' }}>
+                    <p>{element.first}</p>
+                    <p>{element.second}</p>
+                    <p>{element.third}</p>
+                </div>
                 </SwiperSlide>
             ))}
         </Swiper>

@@ -33,3 +33,7 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
+
+
+!public/assets/Pexels Videos 1723017.mp4
+!public/assets/Pexels Videos 1893746.mp4
